@@ -1,0 +1,22 @@
+﻿<Window x:Class="L_Sys._2.GetDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L_Sys._2"
+        mc:Ignorable="d"
+        Title="Data" Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="iteracjeTXB" HorizontalAlignment="Left" Height="23" Margin="10,29,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="katTXB" HorizontalAlignment="Left" Height="23" Margin="10,68,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="przeksztalceniaTXB" HorizontalAlignment="Left" Height="23" Margin="10,146,0,0" TextWrapping="Wrap" Text="A → F−[[A]+A]+F[+FA]−A|F → FF" VerticalAlignment="Top" Width="257"/>
+        <TextBox x:Name="startFormulaTXB" HorizontalAlignment="Left" Height="23" Margin="85,180,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="okBTT" Content="Rysuj" HorizontalAlignment="Left" Margin="108,220,0,0" VerticalAlignment="Top" Width="75" Click="okBTT_Click"/>
+        <TextBox x:Name="moveLenghtTXB" HorizontalAlignment="Left" Height="22" Margin="162,30,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="XTXB" HorizontalAlignment="Left" Height="23" Margin="10,107,0,0" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="YTXB" HorizontalAlignment="Left" Height="23" Margin="162,107,0,0" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="startAngleTXB" HorizontalAlignment="Left" Height="23" Margin="162,68,0,0" TextWrapping="Wrap" Text="270" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="smokBTT" Content="Smok" HorizontalAlignment="Left" Margin="22,220,0,0" VerticalAlignment="Top" Width="75" Click="smokBTT_Click"/>
+        <Button x:Name="waterShitBTT" Content="Plant" HorizontalAlignment="Left" Margin="192,220,0,0" VerticalAlignment="Top" Width="75" Click="waterShitBTT_Click"/>
+    </Grid>
+</Window>
