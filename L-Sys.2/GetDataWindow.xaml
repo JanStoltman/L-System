@@ -7,16 +7,28 @@
         mc:Ignorable="d"
         Title="Data" Height="300" Width="300">
     <Grid>
-        <TextBox x:Name="iteracjeTXB" HorizontalAlignment="Left" Height="23" Margin="10,29,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="katTXB" HorizontalAlignment="Left" Height="23" Margin="10,68,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="przeksztalceniaTXB" HorizontalAlignment="Left" Height="23" Margin="10,146,0,0" TextWrapping="Wrap" Text="A → F−[[A]+A]+F[+FA]−A|F → FF" VerticalAlignment="Top" Width="257"/>
-        <TextBox x:Name="startFormulaTXB" HorizontalAlignment="Left" Height="23" Margin="85,180,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="iteracjeTXB" HorizontalAlignment="Left" Height="23" Margin="10,14,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="katTXB" HorizontalAlignment="Left" Height="23" Margin="10,52,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="przeksztalceniaTXB" HorizontalAlignment="Left" Height="23" Margin="22,164,0,0" TextWrapping="Wrap" Text="A → F−[[A]+A]+F[+FA]−A|F → FF" VerticalAlignment="Top" Width="257"/>
+        <TextBox x:Name="startFormulaTXB" HorizontalAlignment="Left" Height="23" Margin="22,192,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="okBTT" Content="Rysuj" HorizontalAlignment="Left" Margin="108,220,0,0" VerticalAlignment="Top" Width="75" Click="okBTT_Click"/>
-        <TextBox x:Name="moveLenghtTXB" HorizontalAlignment="Left" Height="22" Margin="162,30,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="XTXB" HorizontalAlignment="Left" Height="23" Margin="10,107,0,0" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="YTXB" HorizontalAlignment="Left" Height="23" Margin="162,107,0,0" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="startAngleTXB" HorizontalAlignment="Left" Height="23" Margin="162,68,0,0" TextWrapping="Wrap" Text="270" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="moveLenghtTXB" HorizontalAlignment="Left" Height="22" Margin="162,14,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="XTXB" HorizontalAlignment="Left" Height="23" Margin="10,91,0,0" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="YTXB" HorizontalAlignment="Left" Height="23" Margin="162,91,0,0" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="startAngleTXB" HorizontalAlignment="Left" Height="23" Margin="162,52,0,0" TextWrapping="Wrap" Text="270" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="smokBTT" Content="Smok" HorizontalAlignment="Left" Margin="22,220,0,0" VerticalAlignment="Top" Width="75" Click="smokBTT_Click"/>
         <Button x:Name="waterShitBTT" Content="Plant" HorizontalAlignment="Left" Margin="192,220,0,0" VerticalAlignment="Top" Width="75" Click="waterShitBTT_Click"/>
+        <TextBox x:Name="angleCorrectionTXB" HorizontalAlignment="Left" Height="23" Margin="10,128,0,0" TextWrapping="Wrap" Text="1,00" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="brushCB" HorizontalAlignment="Left" Margin="159,129,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" Text="Kat skretu" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="162,37,0,0" TextWrapping="Wrap" Text="Kat poczatkowy " VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"><Run Text="Iteracje"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="162,-1,0,0" TextWrapping="Wrap" Text="Dlugosc kroku" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="X &lt;0:1400&gt;" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="162,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"><Run Text="Y &lt;"/><Run Text="0"/><Run Text=":"/><Run Text="850&gt;"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="ToDo" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="159,114,0,0" TextWrapping="Wrap" Text="Kolor" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="22,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="260"><Run Text="Przeksztalcenia, przy "/><Run Text="&gt;1 na symbol "/><Run Text="wybiera"/><Run Text=" losowo"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="147,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" FontSize="9.333" Width="132" Text="Start string/char"/>
     </Grid>
 </Window>

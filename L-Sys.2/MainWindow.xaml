@@ -8,6 +8,11 @@
         Title="MainWindow" Height="900" Width="1500"
         WindowState="Maximized">
     <Grid>
-        <Canvas Name="MainCanvas" HorizontalAlignment="Center" Height= "800" Width="1400" Background="Gray"/>
+        <Canvas Name="MainCanvas" HorizontalAlignment="Left" Height= "850" Width="1400" Background="Black" />
+        <Button x:Name="button" Content=">" HorizontalAlignment="Left" Margin="1405,53,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button1" Content=">>" HorizontalAlignment="Left" Margin="1405,80,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="button3" Content=">>>" HorizontalAlignment="Left" Margin="1407,107,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
+        <Button x:Name="button2" Content="Reset" HorizontalAlignment="Left" Margin="1405,199,0,0" VerticalAlignment="Top" Width="75" Click="button3_Click"/>
+        <Button x:Name="button4" Content="R" HorizontalAlignment="Left" Margin="1407,134,0,0" VerticalAlignment="Top" Width="75" Click="button4_Click"/>
     </Grid>
 </Window>

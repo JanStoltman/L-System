@@ -30,11 +30,16 @@ namespace L_Sys._2
         public double STARTX = 700;
         public double STARTY = 800;
 
+        public double angleCorrection = 1;
         public SolidColorBrush brush = Brushes.DarkGreen;
 
         public GetDataWindow()
         {
             InitializeComponent();
+            brushCB.ItemsSource = typeof(Brushes).GetProperties()
+                             .Where(pi => pi.PropertyType == typeof(SolidColorBrush))
+                             .Select(pi => pi.Name)
+                             .ToList();
         }
 
         private void okBTT_Click(object sender, RoutedEventArgs e)
@@ -47,7 +52,18 @@ namespace L_Sys._2
 
             TRANSFORMATIONS = przeksztalceniaTXB.Text.Split('|').ToList<string>();
             START_FORMULA = startFormulaTXB.Text;
-            this.Close();
+            double.TryParse(angleCorrectionTXB.Text, out angleCorrection);
+
+            TakeBrushFromCB();
+
+           this.Close();
+        }
+
+        private void TakeBrushFromCB()
+        {
+           if(brushCB.Text != String.Empty)
+                brush = (SolidColorBrush)new BrushConverter().ConvertFromString(brushCB.Text);
+
         }
 
         private void smokBTT_Click(object sender, RoutedEventArgs e)
